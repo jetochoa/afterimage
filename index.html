@@ -21,21 +21,6 @@
       </div>
     </div>
   </section>
-  <script>
-    var v = document.querySelector('video');
-    v.muted = true;
-    v.playsInline = true;
-    function tryPlay() {
-      var p = v.play();
-      if (p !== undefined) p.catch(function() {});
-    }
-    tryPlay();
-    ['touchstart','touchend','click','pointerdown'].forEach(function(evt) {
-      document.addEventListener(evt, tryPlay, { once: true, passive: true });
-    });
-    document.addEventListener('visibilitychange', function() {
-      if (!document.hidden) tryPlay();
-    });
-  </script>
+
 </body>
 </html>
