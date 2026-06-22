@@ -11,8 +11,8 @@
   <section class="hero">
     <div class="film-frame">
       <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-bg.png">
-        <source src="assets/reel.webm" type="video/webm">
         <source src="assets/reel.mp4"  type="video/mp4">
+        <source src="assets/reel.webm" type="video/webm">
       </video>
       <div class="grain"></div>
       <div class="hero-text">
@@ -23,7 +23,12 @@
   </section>
   <script>
     var v = document.querySelector('video');
-    function tryPlay() { v.play(); }
+    v.muted = true;
+    v.playsInline = true;
+    function tryPlay() {
+      var p = v.play();
+      if (p !== undefined) p.catch(function() {});
+    }
     tryPlay();
     document.addEventListener('touchstart', tryPlay, { once: true });
     document.addEventListener('visibilitychange', function() {
