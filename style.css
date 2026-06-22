@@ -135,19 +135,19 @@ h1 {
 /* ── Film flicker: analog brightness stutter ── */
 @keyframes film-flicker {
   0%   { filter: brightness(1.000); }
-  7%   { filter: brightness(0.996); }
-  14%  { filter: brightness(1.004); }
-  21%  { filter: brightness(0.998); }
-  28%  { filter: brightness(1.005); }
+  7%   { filter: brightness(0.994); }
+  14%  { filter: brightness(1.000); }
+  21%  { filter: brightness(0.997); }
+  28%  { filter: brightness(0.995); }
   35%  { filter: brightness(0.994); }
-  42%  { filter: brightness(1.002); }
-  50%  { filter: brightness(0.997); }
-  57%  { filter: brightness(1.004); }
+  42%  { filter: brightness(1.000); }
+  50%  { filter: brightness(0.996); }
+  57%  { filter: brightness(1.000); }
   64%  { filter: brightness(0.995); }
-  71%  { filter: brightness(1.002); }
-  78%  { filter: brightness(0.998); }
-  85%  { filter: brightness(1.003); }
-  92%  { filter: brightness(0.996); }
+  71%  { filter: brightness(1.000); }
+  78%  { filter: brightness(0.997); }
+  85%  { filter: brightness(1.000); }
+  92%  { filter: brightness(0.995); }
   100% { filter: brightness(1.000); }
 }
 
