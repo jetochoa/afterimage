@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Friz Quadrata Std';
+  src: url('assets/FrizQuadrataItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
   font-family: 'Eurostile-Bold';
   src: url('assets/EurostileBold.woff2') format('woff2');
   font-weight: 700;
@@ -81,7 +89,7 @@ h1 {
 
 .subtitle {
   /* Friz Quadrata Std Italic is the original Figma font */
-  font-family: 'Friz Quadrata Std', 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Friz Quadrata Std', Georgia, serif;
   font-size: clamp(0.875rem, 1.5625vw, 1.875rem);
   font-style: italic;
   font-weight: 400;
