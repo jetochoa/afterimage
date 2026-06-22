@@ -75,13 +75,6 @@ video::-webkit-media-controls-start-playback-button {
   pointer-events: none !important;
 }
 
-/* ── Video overlay: blocks native play button interaction ── */
-.video-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-}
-
 /* ── Hero text ────────────────────────── */
 .hero-text {
   position: absolute;
