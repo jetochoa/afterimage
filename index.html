@@ -10,7 +10,7 @@
 <body>
   <section class="hero">
     <div class="film-frame">
-      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-bg.png">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
         <source src="assets/reel.mp4"  type="video/mp4">
         <source src="assets/reel.webm" type="video/webm">
       </video>
@@ -30,7 +30,9 @@
       if (p !== undefined) p.catch(function() {});
     }
     tryPlay();
-    document.addEventListener('touchstart', tryPlay, { once: true });
+    ['touchstart','touchend','click','pointerdown'].forEach(function(evt) {
+      document.addEventListener(evt, tryPlay, { once: true, passive: true });
+    });
     document.addEventListener('visibilitychange', function() {
       if (!document.hidden) tryPlay();
     });
