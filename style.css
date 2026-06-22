@@ -84,7 +84,7 @@ video::-webkit-media-controls-start-playback-button {
   text-align: center;
   white-space: nowrap;
   z-index: 20;
-  animation: fadeIn 1.6s ease forwards;
+  animation: fadeIn 1.6s ease forwards, film-flicker 0.37s steps(1) infinite;
 }
 
 /* ── Typography ───────────────────────── */
@@ -130,6 +130,25 @@ h1 {
   85%  { transform: translate(-0.3px, 0px);    }
   92%  { transform: translate(0.15px,-0.15px); }
   100% { transform: translate(0px,    0px);    }
+}
+
+/* ── Film flicker: analog brightness stutter ── */
+@keyframes film-flicker {
+  0%   { filter: brightness(1.00); }
+  7%   { filter: brightness(0.92); }
+  14%  { filter: brightness(1.07); }
+  21%  { filter: brightness(0.96); }
+  28%  { filter: brightness(1.10); }
+  35%  { filter: brightness(0.88); }
+  42%  { filter: brightness(1.04); }
+  50%  { filter: brightness(0.93); }
+  57%  { filter: brightness(1.08); }
+  64%  { filter: brightness(0.90); }
+  71%  { filter: brightness(1.03); }
+  78%  { filter: brightness(0.95); }
+  85%  { filter: brightness(1.06); }
+  92%  { filter: brightness(0.91); }
+  100% { filter: brightness(1.00); }
 }
 
 /* ── Fade in ──────────────────────────── */
