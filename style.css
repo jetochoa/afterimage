@@ -134,21 +134,21 @@ h1 {
 
 /* ── Film flicker: analog brightness stutter ── */
 @keyframes film-flicker {
-  0%   { filter: brightness(1.00); }
-  7%   { filter: brightness(0.92); }
-  14%  { filter: brightness(1.07); }
-  21%  { filter: brightness(0.96); }
-  28%  { filter: brightness(1.10); }
-  35%  { filter: brightness(0.88); }
-  42%  { filter: brightness(1.04); }
-  50%  { filter: brightness(0.93); }
-  57%  { filter: brightness(1.08); }
-  64%  { filter: brightness(0.90); }
-  71%  { filter: brightness(1.03); }
-  78%  { filter: brightness(0.95); }
-  85%  { filter: brightness(1.06); }
-  92%  { filter: brightness(0.91); }
-  100% { filter: brightness(1.00); }
+  0%   { filter: brightness(1.000); }
+  7%   { filter: brightness(0.996); }
+  14%  { filter: brightness(1.004); }
+  21%  { filter: brightness(0.998); }
+  28%  { filter: brightness(1.005); }
+  35%  { filter: brightness(0.994); }
+  42%  { filter: brightness(1.002); }
+  50%  { filter: brightness(0.997); }
+  57%  { filter: brightness(1.004); }
+  64%  { filter: brightness(0.995); }
+  71%  { filter: brightness(1.002); }
+  78%  { filter: brightness(0.998); }
+  85%  { filter: brightness(1.003); }
+  92%  { filter: brightness(0.996); }
+  100% { filter: brightness(1.000); }
 }
 
 /* ── Fade in ──────────────────────────── */
