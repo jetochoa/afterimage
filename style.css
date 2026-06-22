@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Eurostile-Bold';
+  src: url('assets/EurostileBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -63,7 +71,7 @@ html, body {
 /* ── Typography ───────────────────────── */
 h1 {
   /* Eurostile-Bold is the original Figma font — add via @font-face if you have the file */
-  font-family: 'Eurostile-Bold', 'Eurostile', 'Exo 2', sans-serif;
+  font-family: 'Eurostile-Bold', 'Eurostile', sans-serif;
   font-size: clamp(2rem, 5.208vw, 6.25rem);
   font-weight: 700;
   letter-spacing: 0.1em;
