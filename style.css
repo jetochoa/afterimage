@@ -64,6 +64,15 @@ html, body {
   animation: grain-shift 0.08s steps(1) infinite;
 }
 
+/* ── Hide native video controls on iOS ── */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-panel,
+.hero-video::-webkit-media-controls-play-button,
+.hero-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 /* ── Hero text ────────────────────────── */
 .hero-text {
   position: absolute;
