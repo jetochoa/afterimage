@@ -73,7 +73,7 @@ html, body {
   text-align: center;
   white-space: nowrap;
   z-index: 20;
-  animation: fadeIn 1.6s ease forwards;
+
 }
 
 /* ── Typography ───────────────────────── */
@@ -131,8 +131,3 @@ h1 {
   100% { background-position: 0 0; }
 }
 
-/* ── Fade in ──────────────────────────── */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
