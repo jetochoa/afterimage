@@ -21,6 +21,9 @@
       </div>
     </div>
   </section>
-
+  <script>
+    var v = document.querySelector('video');
+    document.addEventListener('touchstart', function() { v.play(); }, { once: true, passive: true });
+  </script>
 </body>
 </html>
